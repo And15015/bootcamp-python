@@ -1,3 +1,5 @@
+[![Black](https://github.com/And15015/bootcamp-python/actions/workflows/black.yml/badge.svg)](https://github.com/And15015/bootcamp-python/actions/workflows/black.yml)
+
 # Week 1 assignment 
 
 _Python Bootcamp for Data week 1 assignment_
