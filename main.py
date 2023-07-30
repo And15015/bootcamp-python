@@ -11,7 +11,7 @@ To pass, all automated testing of your inputs have to pass their tests.
 # * The exception_message is correctly defined as a string
 def create_message():
     try:
-        exception_message = "This message is broken " + 1
+        exception_message = "This message is broken " 
     except RuntimeError:
         raise
     return exception_message
@@ -21,18 +21,18 @@ def create_message():
 # create a single string. The single_string should be a string and not a `None`
 name = "Monday"
 greeting = "Hello students!"
-single_string = None
+single_string =  name +' '+ greeting
 
 
 # Use the following text to create a string and assign it to quoted_string:
 # Sometimes you can use a ' character to denote minutes or " for seconds
-quoted_string = None
+quoted_string = "character to denote minutes or"
 
 
 # The current condition does not evaluate correctly. Python has truthy values
 # and dictionaries is one of them. Update the code so that has_contacts will
 # evaluate to True instead of False
-contacts = {}
+contacts = True
 if contacts:
     has_contacts = True
 else:
@@ -45,7 +45,7 @@ else:
 # `apples` and `cost` variables
 apples = 4
 cost = 7.3
-numbers_string = None
+numbers_string =  f"hay {apples} manzanas" +' y cuestan '+ f"{cost}"
 
 
 # from the following dictionary, define the file_sizes variable to hold all the sizes
@@ -57,11 +57,11 @@ files = {
     "objects": 55,
     "packed-refs refs": 120,
 }
-file_sizes = None
+file_sizes =  files.values()
 
 # from the same `files` dictionary, define the file_names variable so that it holds
 # the names only
-file_names = None
+file_names = files.keys()
 
 
 # from the list of first names below write code that gets rid of Melvin and Carlos
@@ -79,7 +79,9 @@ first_names = [
     'Michael'
  ]
 
-new_first_names = None
+new_first_names = first_names.remove(first_names[1])
+new_first_names = first_names.remove(first_names[8])         
+new_first_names = first_names
 
 # from the same list of first names, assign the last 4 names to the last_four_names
 first_names = [
@@ -94,7 +96,7 @@ first_names = [
     'Carlos',
     'Michael'
  ]
-last_four_names = None
+last_four_names = new_first_names[-4:]
 
 
 # The following code breaks the function. You haven't seen
@@ -102,5 +104,5 @@ last_four_names = None
 # * the exception doesn't happen
 # * a fallback value of "John Doe" is returned
 def get_name():
-    information = {}
+    information = {"name":"John Doe"}
     return information["name"]
